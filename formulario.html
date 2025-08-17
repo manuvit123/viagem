@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Contato</title>
+  <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <h1>Agência de Viagens - Contato</h1>
+  </header>
+
+  <main class="container__principal">
+    <section class="formulario">
+      <h2>Preencha seus dados</h2>
+      <form action="#" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone">
+
+        <label for="destino">Destino de Interesse:</label>
+        <select id="destino" name="destino">
+          <option value="rio">Rio de Janeiro</option>
+          <option value="salvador">Salvador</option>
+          <option value="foz">Foz do Iguaçu</option>
+        </select>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+
+        <button type="submit" class="botao">Enviar</button>
+      </form>
+
+      <div class="botoes__navegacao">
+        <a href="index.html" class="botao">Voltar à Página Inicial</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,92 @@
+:root {
+  --cor-fundo: #f0f8ff;
+  --cor-cabecalho: #023e8a;
+  --cor-botao: #219ebc;
+  --cor-texto: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--cor-fundo);
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.cabecalho {
+  background: var(--cor-cabecalho);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.container__principal {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.formulario {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.formulario h2 {
+  margin-bottom: 1rem;
+  color: var(--cor-cabecalho);
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: var(--cor-texto);
+}
+
+input, select, textarea {
+  margin-top: 0.5rem;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: none;
+}
+
+.botao {
+  background: var(--cor-cabecalho);
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  margin-top: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+}
+
+.botao:hover {
+  background: var(--cor-botao);
+}
+
+.botoes__navegacao {
+  text-align: center;
+  margin-top: 1rem;
+}
